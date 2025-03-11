@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 设置页面标题
-st.set_page_config(page_title="我的主页", layout="wide")
+st.set_page_config(page_title="旅游管理平台", layout="wide")
 
 # 隐藏默认的Streamlit样式
 hide_streamlit_style = """
