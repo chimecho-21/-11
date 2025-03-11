@@ -170,28 +170,28 @@ st.markdown('<div style="display: flex; align-items: center; justify-content: sp
 st.markdown('<hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">', unsafe_allow_html=True)
 
 # 创建底部导航栏的三个按钮，横着排列
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.markdown('<div style="text-align: center; padding: 10px;">'
-                '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">'
-                '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>'
-                '</svg>'
-                '<div style="margin-top: 5px; font-size: 14px;">首页</div>'
-                '</div>', unsafe_allow_html=True)
-with col2:
-    st.markdown('<div style="text-align: center; padding: 10px;">'
-                '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">'
-                '<circle cx="12" cy="12" r="10"></circle>'
-                '<line x1="12" y1="16" x2="12" y2="12"></line>'
-                '<line x1="12" y1="8" x2="12.01" y2="8"></line>'
-                '</svg>'
-                '<div style="margin-top: 5px; font-size: 14px;">发布</div>'
-                '</div>', unsafe_allow_html=True)
-with col3:
-    st.markdown('<div style="text-align: center; padding: 10px;">'
-                '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">'
-                '<circle cx="12" cy="12" r="10"></circle>'
-                '<path d="M12 6v6l4 2"></path>'
-                '</svg>'
-                '<div style="margin-top: 5px; font-size: 14px;">我的</div>'
-                '</div>', unsafe_allow_html=True)
+st.markdown('''
+<div style="display: flex; justify-content: space-between; max-width: 600px; margin: 0 auto;">
+    <div style="text-align: center; padding: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+        </svg>
+        <div style="margin-top: 5px; font-size: 14px;">首页</div>
+    </div>
+    <div style="text-align: center; padding: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <div style="margin-top: 5px; font-size: 14px;">发布</div>
+    </div>
+    <div style="text-align: center; padding: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 6v6l4 2"></path>
+        </svg>
+        <div style="margin-top: 5px; font-size: 14px;">我的</div>
+    </div>
+</div>
+''', unsafe_allow_html=True)
