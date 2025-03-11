@@ -29,7 +29,7 @@ col_avatar, col_info = st.columns([1, 3])
 with col_avatar:
     st.image("https://via.placeholder.com/150", width=150)  # 替换为你的头像图片路径
 with col_info:
-    st.markdown('<div style="font-size: 24px; margin-top: 20px;">晨和夕</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size: 24px; margin-top: 20px;">郭婷婷</div>', unsafe_allow_html=True)
 
 # 创建个人信息和我的收藏区域
 col_personal, col_collection = st.columns(2)
