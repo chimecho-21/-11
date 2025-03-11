@@ -166,8 +166,10 @@ st.markdown('<div style="display: flex; align-items: center; justify-content: sp
             '</div>', unsafe_allow_html=True)
 
 # 创建底部导航栏
+# 创建底部导航栏
 st.markdown('<hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">', unsafe_allow_html=True)
 
+# 创建底部导航栏的三个按钮，横着排列
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown('<div style="text-align: center; padding: 10px;">'
